@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="486.0" prefWidth="299.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="controller.MyController">
+  <!-- TODO Add Nodes -->
+  <children>
+    <TreeView fx:id="myTree" layoutX="14.0" layoutY="14.0" prefHeight="248.0" prefWidth="269.0" />
+    <Button fx:id="delete" layoutX="14.0" layoutY="282.0" mnemonicParsing="false" onAction="#deleteObject" text="Usuń!" />
+    <Button id="addBtn" fx:id="addFile" layoutX="88.0" layoutY="282.0" mnemonicParsing="false" onAction="#addFile" text="Dodaj plik" />
+    <Button id="dodajKatalog" fx:id="addDir" layoutX="188.0" layoutY="282.0" mnemonicParsing="false" onAction="#addDir" text="Dodaj katalog" />
+    <TextField fx:id="textField" layoutX="14.0" layoutY="317.0" prefWidth="269.0" />
+    <Label layoutX="14.0" layoutY="352.0" text="server:" />
+    <Label layoutX="14.0" layoutY="383.0" text="port:" />
+    <ProgressBar fx:id="progressBar" layoutX="14.0" layoutY="451.0" prefHeight="21.0" prefWidth="269.0" progress="0.0" />
+    <TextField fx:id="serverName" layoutX="61.0" layoutY="349.0" prefWidth="200.0" promptText="localhost" text="" />
+    <TextField fx:id="portNumber" layoutX="62.0" layoutY="380.0" prefWidth="200.0" promptText="112" text="" />
+    <Button fx:id="sendButton" layoutX="70.0" layoutY="415.0" mnemonicParsing="false" onAction="#send" text="Wyślij!" />
+    <Label fx:id="statLabel" layoutX="160.0" layoutY="418.0" text="Status" />
+  </children>
+</AnchorPane>
